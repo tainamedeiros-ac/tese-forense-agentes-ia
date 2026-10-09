@@ -1,0 +1,21 @@
+===================== AUDITORIA =====================
+Usuário: Taina (12 anos)
+Data/Hora: 24/08/2026 08:35:20
+Navegador padrão do sistema: 
+Modelo LLM: qwen2.5:7b
+Versão do agente: 1.1.0
+======================================================
+A patrulha canina, mais conhecida como "Paw Patrol" no original, é um programa de animação canadense para crianças criado por Keith Chapman [1] e produzido pela Spin Master Entertainment [2]. Lançada em 2013, a série atingiu o estatuto de maior franquia de mídia do mundo com filmes, séries spin-off e produtos licenciados [1].
+
+A narrativa central envolve Ryder, um menino que lidera uma equipe de cães resgatistas chamada Paw Patrol. Cada cachorro possui habilidades baseadas em profissões de serviços de emergência, podendo se transformar em veículos [1]. Os episódios seguem uma fórmula semelhante: Ryder chama a equipe para ajudar com problemas na Adventure Bay [2].
+
+Ao longo dos anos, foram lançadas várias sub-séries temáticas como "Mighty Pups", "Sea Patrol" e "Dino Rescue" [1]. O show já está em sua décima terceira temporada e é exibido em diversos países, incluindo Canadá (TVOKids) e Estados Unidos (Nick Jr.) [1].
+
+Em relação aos episódios específicos de 2017-2018, o produtor Charles E. Bastien liderou a produção. Diferentes atores/escritores contribuíram para diferentes episódios [2]. O conteúdo dos episódios variava entre salvar criaturas (borboletas, galinhas subterrâneas) e objetos inanimados (sino de mergulho voador), além de situações específicas como fazendas encharcadas [2].
+
+Embora o terceiro resumo não tenha fornecido informações diretamente relevantes sobre a série "Paw Patrol", os outros dois resumos destacaram pontos importantes sobre a estrutura e o sucesso do programa, assim como detalhes sobre seus episódios específicos [1-2].
+
+Referências
+[1] "PAW Patrol – Wikipédia, a enciclopédia livre," en.wikipedia.org. [Online]. Disponível em: https://en.wikipedia.org/wiki/Paw_Patrol. [Acesso em: 24 Aug. 2026].
+[2] "Lista de episódios de PAW Patrol – Wikipédia, a enciclopédia livre," pt.wikipedia.org. [Online]. Disponível em: https://pt.wikipedia.org/wiki/Lista_de_episódios_de_PAW_Patrol. [Acesso em: 24 Aug. 2026].
+[3] "Patrulha Canina - PAW Patrol Portugues Brasil - YouTube," www.youtube.com. [Online]. Disponível em: https://www.youtube.com/@PAWPatrolPortuguesBrasil. [Acesso em: 24 Aug. 2026].

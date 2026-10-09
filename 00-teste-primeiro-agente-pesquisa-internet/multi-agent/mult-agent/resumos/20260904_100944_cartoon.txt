@@ -1,0 +1,18 @@
+===================== AUDITORIA =====================
+Usuário: taina (5 anos)
+Pesquisa: cartoon
+Data/Hora: 04/09/2026 10:09:44
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: Agente autônomo (tool-calling via lib ollama)
+Versão do agente: 2.0.0
+Histórico completo de auditoria: historico_auditoria.log
+Rodadas de decisão do modelo: 5
+Buscas feitas pelo agente: 2
+Páginas efetivamente lidas: 1
+======================================================
+A lista dos 50 melhores cartoons da história foi publicada em 1994, através de uma votação realizada por 1000 profissionais da indústria de animação [1]. Entre os cartoons mais famosos listados, destaca-se "The Skeleton Dance" (1929), que foi o primeiro a sincronizar som e imagem, sendo um marco na história do desenho animado [1].
+
+Referências
+[1] "Conheça aqui a lista dos 50 melhores cartoons da história100 greatest cartoons of all time - IMDbOs 27 melhores desenhos animados já transmitidos100 greatest cartoons of all time - IMDbAs 25 caricaturas geniais de pessoas famosas - ArteRefThe 50 Greatest Cartoons - Wikipedia, la enciclopedia libre," monkeybusiness.com.br. [Online]. Disponível em: https://monkeybusiness.com.br/blog/conheca-aqui-a-lista-dos-50-melhores-cartoons-da-historia/. [Acesso em: 04 Sep. 2026].

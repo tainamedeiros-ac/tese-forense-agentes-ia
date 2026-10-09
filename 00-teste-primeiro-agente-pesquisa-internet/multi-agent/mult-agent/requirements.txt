@@ -1,0 +1,15 @@
+# Núcleo (usado pelos dois modos: pipeline determinístico e agente autônomo)
+ollama
+ddgs
+rich
+
+# Extração de texto das páginas. O trafilatura depende do lxml (DLL nativa); se o
+# Smart App Control do Windows bloquear o lxml, tools/scraper.py cai num extrator
+# puro-Python (html.parser + httpx) automaticamente.
+trafilatura
+
+# Motor alternativo do pipeline determinístico (opção 2 do menu). Pode não
+# carregar em máquinas com Smart App Control ativo (a DLL de uuid_utils, exigida
+# pelo langchain-core, é bloqueada); nesse caso o main.py volta pro Ollama direto.
+langchain-core
+langchain-ollama

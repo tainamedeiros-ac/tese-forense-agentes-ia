@@ -1,0 +1,46 @@
+===================== AUDITORIA =====================
+Usuário: ze (8 anos)
+Pesquisa: bob esponja
+Data/Hora: 24/08/2026 17:20:15
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: LangChain (via langchain-ollama)
+Versão do agente: 1.1.0
+Histórico completo de auditoria: historico_auditoria.log
+======================================================
+### Síntese sobre Bob Esponja
+
+**Origem e Aparência:**
+- **SpongeBob SquarePants:** Criado por Stephen Hillenburg para a Nickelodeon, o personagem principal é uma esponja amarela que vive em Bikini Bottom [1][2][3].
+
+**História do Criador:**
+- Hillenburg começou a criar o personagem na década de 1980, inspirado nas marés. Ele trabalhou no Nickelodeon e desenvolveu a série em 1997, estreando oficialmente em 1999 [1][3].
+
+**Recepção e Sucesso:**
+- A série é cobiçada pela crítica desde seu lançamento e considerada uma referência cultural. É um dos desenhos animados mais bem-sucedidos de todos os tempos, com diversos prêmios e altas vendas de merchandise [1][2].
+- **Localidades:** Ambientada na cidade fictícia de Bikini Bottom, onde ocorrem as aventuras dos personagens. A cidade é composta por moradias feitas de funil de navio e "boatmobiles" como veículos.
+
+**Personagens Principais:**
+- **SpongeBob (Bob Esponja):** Personagem-título, um esquilo marinho otimista que vive em uma piña com seu companheiro Gary. Trabalha no restaurante Krusty Krab e é amigo inseparável de Patrick Star.
+- **Patrick Star:** Amigo de Bob Esponja, estúpido mas amigável, mora sob uma rocha.
+- **Squidward Tentacles:** Cozinheiro e vizinho de SpongeBob, cínico e desinteressado em sua vida.
+- **Mr. Krabs:** Proprietário da Krusty Krab, pai figura para SpongeBob.
+- **Pearl Krabs:** Filha adolescente de Mr. Krabs, sem interesse na herança do negócio.
+
+**Produção:**
+- A série original estreou em 1999 e continua até 2026 [1], sendo a série animada americana mais longa em exibição (2026) [3].
+- Além da série principal, foram produzidos três filmes, duas séries derivadas e quatro novas produções estão programadas [2].
+
+**Influências:**
+- A influência da testagem nuclear em Bikini Atol foi confirmada pelo ator do Plankton [1].
+
+**Estilo Visual:**
+- Ambiente marinheiro, personagens inspirados na vida marinha e humor surreal.
+
+Essas informações destacam os aspectos principais de Bob Esponja/SpongeBob SquarePants, incluindo suas origens, características, sucesso e impacto cultural.
+
+Referências
+[1] "SpongeBob SquarePants - Wikipedia," en.wikipedia.org. [Online]. Disponível em: https://en.wikipedia.org/wiki/SpongeBob_SquarePants. [Acesso em: 24 Aug. 2026].
+[2] "Bob Esponja - Wikipedia, la enciclopedia libre," es.wikipedia.org. [Online]. Disponível em: https://es.wikipedia.org/wiki/Bob_Esponja. [Acesso em: 24 Aug. 2026].
+[3] "SpongeBob SquarePants – Wikipédia, a enciclopédia livre," pt.wikipedia.org. [Online]. Disponível em: https://pt.wikipedia.org/wiki/SpongeBob_SquarePants. [Acesso em: 24 Aug. 2026].

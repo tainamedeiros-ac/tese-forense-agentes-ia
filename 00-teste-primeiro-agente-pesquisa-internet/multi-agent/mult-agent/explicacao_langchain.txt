@@ -1,0 +1,108 @@
+O QUE É O LANGCHAIN E COMO ELE FOI USADO NESTE PROJETO
+========================================================
+
+1. O QUE É O LANGCHAIN
+-----------------------
+LangChain é um framework (biblioteca) para construir aplicações que usam LLMs
+(modelos de linguagem, como o qwen2.5 que você roda via Ollama). Ele não é um
+modelo de IA — ele é uma camada de organização em cima de um modelo.
+
+Pensando com a cabeça de quem vem de Java: se o Ollama é o "driver JDBC" (fala
+diretamente com o banco/modelo), o LangChain é mais ou menos um "Hibernate/JPA"
+— uma camada de abstração que padroniza como você monta a pergunta, troca o
+"banco" (o provedor de LLM) sem reescrever a lógica, e te dá blocos prontos
+(templates, memória de conversa, ferramentas, agentes) em vez de você
+construir tudo na mão.
+
+Os principais conceitos do LangChain:
+
+- Chat Models: wrappers padronizados para falar com qualquer provedor de LLM
+  (OpenAI, Anthropic, Ollama, Google, etc.) usando a MESMA interface. Trocar de
+  provedor vira trocar uma classe, não reescrever a integração.
+
+- Messages: em vez de montar um dicionário {"role": "system", "content": ...}
+  na mão (como o llm_client.py original faz), o LangChain tem classes como
+  SystemMessage e HumanMessage — mais parecido com objetos tipados de Java do
+  que dicionários soltos do Python.
+
+- Prompt Templates: forma de montar prompts reutilizáveis com variáveis, sem
+  concatenar strings na mão. (Não usamos isso ainda neste projeto.)
+
+- Tools: funções que o LLM pode "decidir" chamar (ex.: buscar na web, ler uma
+  página). É a peça que faltaria para transformar o agente atual num agente de
+  verdade, que raciocina sobre quando usar cada ferramenta.
+
+- Agents / AgentExecutor: um loop controlado pelo próprio LLM, que decide
+  sozinho quais Tools chamar e em que ordem, até chegar numa resposta. Isso é
+  diferente do que este projeto faz hoje (o pipeline é fixo: busca -> lê
+  páginas -> resume -> sintetiza, sempre nessa ordem).
+
+
+2. COMO ISSO FOI APLICADO NESTE PROJETO
+-----------------------------------------
+Hoje o projeto tem DOIS "motores" para conversar com o modelo, escolhidos no
+início da execução (main.py):
+
+  llm_client.py         -> chama a biblioteca "ollama" diretamente
+  langchain_client.py    -> chama o mesmo Ollama, mas por meio do LangChain
+                            (classe ChatOllama)
+
+Os dois arquivos têm a MESMA assinatura de função:
+
+    def ask(prompt: str, system: str | None = None, model: str = ...) -> str
+
+Isso foi proposital: o ResearcherAgent (agents/researcher_agent.py) não sabe
+nem precisa saber qual dos dois está por trás. Ele recebe essa função como
+parâmetro (ask_fn) no construtor — é o padrão de Injeção de Dependência, igual
+você usaria em Java para trocar uma implementação de uma interface sem mexer
+na classe que a consome.
+
+Comparando o "miolo" dos dois arquivos:
+
+  llm_client.py (Ollama direto):
+    - monta uma lista de dicionários: [{"role": "system", ...}, {"role": "user", ...}]
+    - chama ollama.chat(model=..., messages=...)
+    - lê response["message"]["content"]
+
+  langchain_client.py (via LangChain):
+    - monta uma lista de objetos: [SystemMessage(...), HumanMessage(...)]
+    - cria um ChatOllama(model=...) e chama llm.invoke(messages)
+    - lê response.content
+
+Na prática, para ESTE projeto, o resultado final é idêntico — mesmo modelo
+(qwen2.5:7b), mesmo Ollama rodando localmente, mesma resposta esperada. A
+diferença é só a "porta de entrada" usada para conversar com o modelo.
+
+O cabeçalho de auditoria de cada pesquisa salva (pasta resumos/) agora mostra
+qual motor foi usado ("Motor de execução: Ollama (chamada direta)" ou
+"LangChain (via langchain-ollama)"), para você conseguir comparar depois.
+
+
+3. POR QUE ISSO É ÚTIL DE APRENDER
+------------------------------------
+- Ganho imediato: nenhum, o comportamento é o mesmo. É intencional — a ideia
+  da Fase 1 foi trocar só o "motor" com o menor risco possível, sem duplicar
+  toda a lógica de moderação, log de auditoria e geração de referências que já
+  existia e funcionava.
+
+- Ganho futuro: com o LangChain já integrado, dá para evoluir para um agente
+  de verdade (Fase 2, ainda não implementada) — transformar search_web e
+  fetch_page_text em Tools do LangChain e deixar o próprio modelo decidir
+  quando pesquisar, quando ler uma página e quando já tem informação
+  suficiente para responder. Hoje quem decide essa sequência é o código
+  Python (run() em researcher_agent.py), não o modelo.
+
+- Ganho de portabilidade: se um dia você quiser trocar o Ollama por outro
+  provedor (OpenAI, Anthropic, etc.), com LangChain a troca é só mudar a
+  classe do Chat Model (ChatOllama -> ChatOpenAI, por exemplo) mantendo o
+  resto do código igual. Sem LangChain, você teria que reescrever a
+  integração inteira.
+
+
+4. ARQUIVOS ENVOLVIDOS
+------------------------
+  requirements.txt             -> adicionadas as libs langchain-core e langchain-ollama
+  langchain_client.py          -> novo arquivo, motor alternativo via LangChain
+  llm_client.py                -> motor original, chamada direta ao Ollama (inalterado)
+  agents/researcher_agent.py   -> passou a receber ask_fn/engine_name injetados
+  main.py                      -> pergunta no início qual motor usar (1 ou 2)

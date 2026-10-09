@@ -1,0 +1,27 @@
+===================== AUDITORIA =====================
+Usuário: taina (18 anos)
+Pesquisa: java o que é
+Data/Hora: 22/09/2026 15:41:49
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: Agente autônomo (tool-calling via lib ollama)
+Versão do agente: 2.0.0
+Histórico completo de auditoria: historico_auditoria.log
+Rodadas de decisão do modelo: 5
+Buscas feitas pelo agente: 2
+Páginas efetivamente lidas: 2
+======================================================
+Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirida pela empresa Oracle Corporation. A linguagem foi projetada com o objetivo de ser "escreva uma vez, execute em qualquer lugar", permitindo que o código seja executado em qualquer plataforma com uma JVM (Java Virtual Machine). Java é uma linguagem de alto nível, versátil e amplamente utilizada na indústria de desenvolvimento de software, sendo uma das mais populares e amplamente utilizadas.
+
+A história de Java começou com o Green Project na Sun Microsystems em 1991, com a ideia de criar uma linguagem de programação orientada a objetos para equipamentos e eletrodomésticos. O protótipo inicial, chamado *7, foi um controle remoto com interface gráfica. Em 1995, a plataforma Java foi lançada e rapidamente se tornou popular, com mais de 3 milhões de desenvolvedores em todo o mundo em 2004. A Sun Microsystems tentou submeter a linguagem a padronização pelos órgãos ISO/IEC e ECMA, mas acabou desistindo. Java ainda é um padrão de fato, controlado através do Java Community Process (JCP).
+
+Java possui várias características, como orientação a objetos, portabilidade, recursos de rede, segurança, e facilidades de internacionalização. O método main é onde o programa inicia, e pode estar presente em qualquer classe. As classes podem ser derivadas de outras classes, como no exemplo de Animal e suas subclasses Cachorro e Gato.
+
+O Java Runtime Environment (JRE) é a parte do runtime do software Java, que é tudo o que você precisa para executar aplicativos Java WebStart em um browser suportado. O JRE contém a Máquina Virtual Java (JVM), bem como as principais classes e o suporte a bibliotecas da plataforma Java. O software de Plug-in Java é um componente do JRE que permite que alguns aplicativos escritos na linguagem de programação Java funcionem em alguns browsers.
+
+A plataforma Java é gratuita para uso pessoal e desenvolvimento, com todos os kits de desenvolvimento e outras ferramentas úteis disponíveis em https://www.oracle.com/javadownload/. É recomendado fazer upgrade para o patch mais recente do Java a cada trimestre para garantir que seus aplicativos Java continuem a ser executados com a versão mais atualizada, pois os patches contêm aprimoramentos importantes para melhorar o desempenho, a estabilidade e a segurança dos aplicativos Java.
+
+Referências
+[1] "Java (linguagem de programação) – Wikipédia, a enciclopédia livre," pt.wikipedia.org. [Online]. Disponível em: https://pt.wikipedia.org/wiki/Java_(linguagem_de_programação). [Acesso em: 22 Sep. 2026].
+[2] "O que é Java e por que preciso dele?," www.java.com. [Online]. Disponível em: https://www.java.com/pt-BR/download/help/whatis_java.html. [Acesso em: 22 Sep. 2026].

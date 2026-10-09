@@ -1,0 +1,32 @@
+===================== AUDITORIA =====================
+Usuário: Taina (5 anos)
+Pesquisa: desenho para assistir no youtube
+Data/Hora: 04/09/2026 06:05:52
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: Agente autônomo (tool-calling via lib ollama)
+Versão do agente: 2.0.0
+Histórico completo de auditoria: historico_auditoria.log
+Rodadas de decisão do modelo: 5
+Buscas feitas pelo agente: 2
+Páginas efetivamente lidas: 1
+======================================================
+2. **Canal "Desenhos animados para crianças"**: Oferece desenhos animados sobre carros, caminhões e trens, bem como outros desenhos populares. O canal tem uma variedade de conteúdo para crianças, incluindo desenhos animados educativos e divertidos. [1]
+
+3. **Episódios de Masha e o Urso**: Disponíveis em uma coleção de episódios favoritos. O canal contém todos os episódios e temporadas de Masha e o Urso, um desenho animado popular. [2]
+
+4. **Léo, o caminhão**: Um desenho animado infantil sobre Léo e sua turma. O vídeo apresenta Léo, o caminhão, e sua turma em uma aventura para a Lua. [3]
+
+Aqui estão algumas sugestões de desenhos animados para assistir no YouTube:
+
+1. **Canal "Desenhos animados para crianças"**: Oferece desenhos animados sobre carros, caminhões e trens, bem como outros desenhos populares. [1]
+
+2. **Episódios de Masha e o Urso**: Disponíveis em uma coleção de episódios favoritos. [2]
+
+3. **Léo, o caminhão**: Um desenho animado infantil sobre Léo e sua turma. [3]
+
+Esses canais e desenhos são ótimos para assistir com as crianças. Recomendo explorar os canais e playlists para encontrar o conteúdo mais adequado para você e seus filhos. [1-3]
+
+Referências
+[1] "Desenhos animados para crianças - YouTube," www.youtube.com. [Online]. Disponível em: https://www.youtube.com/@CartoonsinPortuguese. [Acesso em: 04 Sep. 2026].

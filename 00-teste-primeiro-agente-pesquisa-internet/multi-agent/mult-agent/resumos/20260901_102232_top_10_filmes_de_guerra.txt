@@ -1,0 +1,26 @@
+===================== AUDITORIA =====================
+Usuário: taina (18 anos)
+Pesquisa: top 10 filmes de guerra
+Data/Hora: 01/09/2026 10:22:32
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: Agente autônomo (tool-calling via lib ollama)
+Versão do agente: 2.0.0
+Histórico completo de auditoria: historico_auditoria.log
+Rodadas de decisão do modelo: 10
+Buscas feitas pelo agente: 1
+Páginas efetivamente lidas: 3
+======================================================
+Os filmes de guerra têm sido uma forma poderosa para explorar os aspectos mais profundos da guerra e suas consequências humanas. Entre os títulos destacados estão "O Resgate do Soldado Ryan" (1998), dirigido por Steven Spielberg, que narra a história durante o desembarque do Dia D na Normandia [1]. Outro filme notável é "Fugitivos do Inferno" (1942), um filme de guerra e aviação dirigido por Raoul Walsh, que mescla elementos de ação, aventura, melodrama e comédia durante a Segunda Guerra Mundial [2].
+
+Entre os filmes mais recentes, "Guerra ao Terror" (2008) ganhou seis Oscars, incluindo Melhor Filme e Melhor Diretora para Kathryn Bigelow, sendo o primeiro filme de uma mulher a receber essa honra. A trama segue uma equipe de especialistas em desativação de bombas que atua nas perigosas ruas de Bagdá durante a Guerra do Iraque [3]. "Corações de Ferro" (2014), dirigido por David Ayer, é um filme de guerra situado durante os últimos momentos da Segunda Guerra Mundial e estrelado por Brad Pitt, Shia LaBeouf, Logan Lerman, Michael Peña e Jon Bernthal [4].
+
+Além disso, "Bastardos Inglórios" (2009), dirigido por Quentin Tarantino, é um filme repleto de referências ao cinema e à cultura pop que combina elementos de drama, ação e comédia. A história envolve um grupo de soldados judeus-americanos apelidados de "Bastardos", que causam terror entre as forças nazistas [5]. "Sniper Americano" (2014), dirigido por Clint Eastwood, narra a história do atirador de elite Chris Kyle, um dos mais letais na história militar americana [6].
+
+Finalmente, "Platoon" (1986) é um aclamado filme dirigido por Oliver Stone que oferece uma representação intensa e crítica da vivência dos soldados norte-americanos durante a Guerra do Vietnã. O longa-metragem obteve grande êxito tanto de crítica quanto de público, conquistando quatro Oscars [7].
+
+Referências
+[1] "Veja 10 melhores filmes de guerra de todos os tempos para ...," www.techtudo.com.br. [Online]. Disponível em: https://www.techtudo.com.br/listas/2023/11/veja-10-melhores-filmes-de-guerra-de-todos-os-tempos-para-assistir-online-streaming.ghtml. [Acesso em: 01 Sep. 2026].
+[2] "Filmes de guerra: conheça os melhores disponíveis no streaming," www.gazetadopovo.com.br. [Online]. Disponível em: https://www.gazetadopovo.com.br/cultura/filmes-de-guerra-melhores/. [Acesso em: 01 Sep. 2026].
+[3] "Os 10 melhores filmes de guerra para assistir nos streamings27 melhores filmes de guerra de todos os tempos - Cultura GenialAtualizado: Os 30 melhores filmes de guerra de todos os ...Melhores filmes de guerra - AdoroCinema10 Melhores Filmes de Guerra: Lista com os Maiores Épicos," olhardigital.com.br. [Online]. Disponível em: https://olhardigital.com.br/2023/12/16/cinema-e-streaming/os-10-melhores-filmes-de-guerra-para-assistir-nos-streamings/. [Acesso em: 01 Sep. 2026].

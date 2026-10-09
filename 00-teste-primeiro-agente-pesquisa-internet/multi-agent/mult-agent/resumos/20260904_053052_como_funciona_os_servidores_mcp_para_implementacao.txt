@@ -1,0 +1,45 @@
+===================== AUDITORIA =====================
+Usuário: joana (30 anos)
+Pesquisa: como funciona os servidores mcp para implementacao de IA
+Data/Hora: 04/09/2026 05:30:52
+Navegador padrão do sistema: Microsoft Edge
+Mecanismo de busca: DuckDuckGo (via biblioteca ddgs)
+Modelo LLM: qwen2.5:7b
+Motor de execução: LangChain (via langchain-ollama)
+Versão do agente: 1.1.0
+Histórico completo de auditoria: historico_auditoria.log
+======================================================
+O Model Context Protocol (MCP) é um protocolo aberto projetado para facilitar a integração entre modelos de inteligência artificial (IA) e ferramentas externas, resolvendo problemas comuns relacionados a integrações personalizadas, incompatibilidades entre provedores e requisitos de segurança. Este protocolo oferece uma estrutura comum para comunicação, promovendo uma interoperabilidade mais fácil e eficiente entre diferentes sistemas.
+
+**Problemas Resolvidos pelo MCP:**
+1. **N vezes M problema:** A necessidade de integrar cada um dos N modelos AI com cada um dos M ferramentas exige múltiplas integrações personalizadas [1, 2].
+2. **Incompatibilidades:** Diferentes provedores de modelos têm formatos de chamada de funções diferentes, complicando a integração [1].
+3. **Manutenção:** Cada integração tem seu próprio fluxo de autenticação, formato de dados e lidar com erros, aumentando a carga de manutenção [1].
+
+**Características do MCP:**
+- **Padrão Universal:** Define como modelos AI comunicam com ferramentas externas, criando uma estrutura comum [1].
+- **Abstrações:** Três abstrações principais: Ferramentas (capacidades específicas), Recursos (fontes de dados) e Prompts (temas e instruções) [1].
+- **Transporte Agnóstico:** Funciona em diversos protocolos, incluindo HTTP e WebSocket [1].
+- **Open Source:** Mantido por comunidade com contribuições de Anthropic [1].
+
+**Como o MCP Funciona:**
+- **Server:** Exposições de ferramentas, recursos e prompts, com arquitetura em três camadas [1].
+- **Tool Registration:** Ferramentas são registradas com nomes, descrições e esquemas de entrada [1].
+- **Contexto de Segurança:** Confirmações humanas em operações sensíveis, autenticação e autorização a nível do servidor [1].
+
+**Arquitetura do MCP:**
+- **Host-Cliente-Servidor:** O servidor MCP encapsula múltiplas APIs e expõe essas capacidades em um formato único [2].
+- **Mapeamento das Necessidades:** Mapear as necessidades e requisitos, escolher entre um servidor local ou remoto e configurar o servidor com um arquivo de configuração [2].
+
+**Segurança e Privacidade:**
+- O MCP inclui mecanismos de autorização e segurança para garantir que a IA tenha acesso controlado aos dados e ferramentas necessárias [3].
+
+**Aplicações e Benefícios:**
+- O MCP é especialmente útil em setores como engenharia e construção civil, onde dados já existem em diferentes sistemas, permitindo a conexão da IA a esses sistemas de forma padronizada [3].
+
+A adoção do MCP promove uma integração padronizada entre modelos AI e ferramentas externas, facilitando a adoção e utilização de IA em uma variedade maior de aplicativos empresariais, enquanto também respeita questões de segurança e conformidade.
+
+Referências
+[1] "MCP Servers Explained: The New Standard for AI Tool Integration | Xcapit," www.xcapit.com. [Online]. Disponível em: https://www.xcapit.com/en/blog/mcp-servers-explained-ai-tools-standard. [Acesso em: 04 Sep. 2026].
+[2] "MCP: o que é, como funciona e principais diferenças," www.alura.com.br. [Online]. Disponível em: https://www.alura.com.br/artigos/mcp-o-que-e. [Acesso em: 04 Sep. 2026].
+[3] "MCP: tudo que você precisa saber sobre o protocolo que conecta IA e software," blog.altoqi.com.br. [Online]. Disponível em: https://blog.altoqi.com.br/mcp-tudo-que-voce-precisa-saber?hs_amp=true. [Acesso em: 04 Sep. 2026].
