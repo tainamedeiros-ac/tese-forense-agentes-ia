@@ -1,0 +1,30 @@
+@'
+
+# IDE
+.idea/
+*.iml
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Temporarios e compactados
+~$*
+*.zip
+
+# Configuracao local do Claude
+.claude/
+
+# Modelos, dumps e execucoes
+*.gguf
+sha256-*
+*.vmem
+*.raw
+*.dd
+04-sandbox/runs/
+02-revisao-literatura/pdfs/
+'@ | Add-Content .gitignore# created by virtualenv automatically
+*
